@@ -63,12 +63,13 @@ Child:
 
 Parent:
 
+```javascript
 <script>
 	import Child from './child.svelte'
-	
+
 	$: products = ["product 1", "product 2", "product 3", "product 4"];
 	let product
-	
+
 	const addProduct = () => {
 		products = [...products, product]
   }
@@ -81,3 +82,4 @@ Parent:
 		<li>{product}</li>
 	{/each}
 </ul>
+```
